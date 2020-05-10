@@ -15,46 +15,60 @@
     <script src="https://kit.fontawesome.com/41e9e19b16.js" crossorigin="anonymous" defer></script>
     
     <script src="src/index.js" defer></script>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F6%2F69%2FAirbnb_Logo_B%25C3%25A9lo.svg%2F640px-Airbnb_Logo_B%25C3%25A9lo.svg.png&f=1&nofb=1" width="100px" alt="Logo Airbnb"></a>
+          <a class="navbar-brand" href="#"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F6%2F69%2FAirbnb_Logo_B%25C3%25A9lo.svg%2F640px-Airbnb_Logo_B%25C3%25A9lo.svg.png&f=1&nofb=1" alt="Airbnb logo" width="100px"></a>
         </div>
-       <div class="container mr-sm-2 d-flex">
-        <div class="collapse navbar-collapse d-flex justify-content-left" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-globe"></i>
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-light" href="">
-                      Ajuda
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">
-                        <button id="cadastras">Cadastras</button>  
-                    </a>
-                </li>
-            </ul>
-          </div>
-       </div>
+        <div class="content-header">
+            <input class="input-content-header" type="text" placeholder="Miami, Flórida" style="border-radius: 10px 0 0 10px">
+            <input class="input-content-header" type="text" placeholder="15 de mai. - 23 de mai.">
+            <input class="input-content-header" type="text" placeholder="1 hóspede" width="120px">
+            <button class="button-content-header" style="border-radius: 0 10px 10px 0"><img src="https://image.flaticon.com/icons/png/512/61/61088.png" alt="Pesquisa" width="20px"></button>
+
+        </div>
+        <div class="container mr-sm-2 d-flex">
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-globe"></i>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Português(BR)</a>
+                          <a class="dropdown-item" href="#">BRL</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="cadastrar" href=""> Cadastrar-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <hr/>
     <div class="row">
         <div class="col-8">
             <div class="container ml-sm-3 mt-sm-5" >
             <p>Mais de 300 acomodações · 9 de mai. - 10 de mai. · 1 hóspede</p>
             <h1>Acomodações </h1>
+
+            <div id="filtros">
+                <button class="filtroBotao">Flexibilidade de cancelamento</button>
+                <button class="filtroBotao">Tipo de lugar</button>
+                <button class="filtroBotao">Preço</button>
+                <button class="filtroBotao">Reserva Instantânea</button>
+                <button class="filtroBotao">Mais filtros</button>
+            </div>
+
+            <p>Verifique as restrições de viagem antes de fazer uma reserva.A saúde e a segurança das nossas comunidades vêm sempre em primeiro lugar. Siga as orientações do governo e viaje apenas se for essencial. <a href="#" target="_blank" class="saibaMais">Saiba mais</a></p>
+
             </div>
             <div id="acomodacoes" class="  d-flex flex-column">
             

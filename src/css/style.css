@@ -1,0 +1,51 @@
+.navbar {
+    height: 65px;
+    margin-top: 10px;
+}
+
+.content-header {
+    display: flex;
+}
+
+.input-content-header {
+    border: 1px solid rgb(228, 224, 224);
+    padding: 10px;
+    color: black;
+}
+
+.button-content-header {
+    border: 1px solid rgb(228, 224, 224);
+    padding: 10px;
+    background-color: white;
+}
+
+.nav-link {
+    border-radius: 10px;
+}
+
+#cadastrar{
+    border: 1px solid rgb(228, 224, 224);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.saibaMais {
+    text-decoration: underline;
+    color: black;
+}
+
+#quartos {
+    width: 300px;
+    border-radius: 8px;
+}
+
+#filtros {
+    margin: 25px 0;
+}
+
+.filtroBotao {
+    border: 1px solid rgb(175, 174, 174);
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px;
+}
