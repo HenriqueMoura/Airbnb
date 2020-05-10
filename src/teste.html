@@ -1,0 +1,30 @@
+const url = "https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72"
+
+const local = fetch(url)
+  .then(response => response.json())
+  .then(data => {
+      
+        console.log(data)
+        console.log(data[1].photo)
+        for(var i=0; i<data.length; i++) {
+            const acomodacoes = document.getElementById('acomodacoes')
+            acomodacoes.className = "place__details";
+            let locationHTML = 
+            ` <div id="block" class=" d-flex">
+                <div class="mx-sm-4">
+                    <img src="${data[i].photo}", alt="" width="300px" >
+                </div>
+                <div>
+                    <span>${data[i].property_type}</span>
+                    <p>${data[i].name} </p>
+                    <span>R$ ${data[i].price}</span>
+                </div>
+            </div> `;
+
+            acomodacoes.appendChild(locationHTML)
+
+        }
+  });
+
+
+
