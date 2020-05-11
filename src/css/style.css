@@ -1,6 +1,8 @@
-.navbar {
-    height: 65px;
-    margin-top: 10px;
+nav {
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    top: 0;
 }
 
 .content-header {
